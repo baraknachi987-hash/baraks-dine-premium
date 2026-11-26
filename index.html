@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11100e">
+  <meta name="description" content="BARAKS DINE — an invitation to exceptional stays, considered design and memorable dining.">
+  <meta name="keywords" content="luxury hotel, fine dining, suites, spa, events, BARAKS DINE">
+  <meta name="author" content="BARAKS DINE">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BARAKS DINE — Where Luxury Stays, and Flavor Lives.">
+  <meta property="og:description" content="An invitation to exceptional stays, considered design and memorable dining.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&auto=format&fit=crop&q=85">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>BARAKS DINE — Luxury Hotel & Fine Dining</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Hotel",
+        "name": "BARAKS DINE",
+        "description": "A luxury hospitality concept combining considered stays, restorative experiences and fine dining.",
+        "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&auto=format&fit=crop&q=85",
+        "priceRange": "KES 28,000–KES 180,000"
+      },
+      {
+        "@type": "Restaurant",
+        "name": "BARAKS DINE Signature Restaurant",
+        "description": "A contemporary fine-dining concept celebrating seasonal ingredients and thoughtful hospitality.",
+        "servesCuisine": ["Modern European", "Contemporary African", "International"]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Preloader curtain -->
+  <div class="preloader" id="preloader" aria-label="Loading BARAKS DINE">
+    <div class="preloader__mark">B<span>.</span></div>
+    <div class="preloader__name">BARAKS DINE</div>
+    <div class="preloader__line"><span id="preloader-progress"></span></div>
+    <div class="preloader__percent"><span id="preloader-number">00</span><span>%</span></div>
+  </div>
+  <div class="curtain" id="curtain" aria-hidden="true"></div>
+
+  <!-- Custom pointer is hidden on touch devices -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress"></span></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="BARAKS DINE home">
+      <span class="brand__monogram">B<span>.</span></span>
+      <span class="brand__wordmark">BARAKS <i>DINE</i></span>
+    </a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span>
+    </button>
+
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+      <a href="#home" data-i18n="navHome">Home</a>
+      <a href="#rooms" data-i18n="navRooms">Rooms</a>
+      <a href="#dining" data-i18n="navDining">Dining</a>
+      <a href="#experiences" data-i18n="navExperiences">Experiences</a>
+      <a href="#gallery" data-i18n="navGallery">Gallery</a>
+      <a href="#events" data-i18n="navEvents">Events</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <label class="sr-only" for="language-select">Language</label>
+      <select id="language-select" class="select-quiet" aria-label="Choose language">
+        <option value="en">EN</option><option value="sw">SW</option><option value="ar">AR</option>
+      </select>
+      <label class="sr-only" for="currency-select">Currency</label>
+      <select id="currency-select" class="select-quiet" aria-label="Choose currency">
+        <option value="KES">KES</option><option value="USD">USD</option><option value="EUR">EUR</option><option value="AED">AED</option>
+      </select>
+      <button class="icon-button theme-toggle" id="theme-toggle" aria-label="Switch to light theme" title="Toggle theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 15.2A8.5 8.5 0 0 1 8.8 3.6 8.5 8.5 0 1 0 20.4 15.2Z"/></svg>
+      </button>
+      <a class="button button--gold button--small header-book" href="#booking" data-i18n="bookNow">Book Now</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__media" aria-hidden="true">
+        <img class="hero__poster" src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=2200&auto=format&fit=crop&q=90" alt="">
+        <video class="hero__video" id="hero-video" muted loop playsinline preload="none" poster="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=2200&auto=format&fit=crop&q=90">
+          <source src="https://videos.pexels.com/video-files/35083680/14863150_1920_1080_60fps.mp4" type="video/mp4">
+        </video>
+        <div class="hero__veil"></div>
+      </div>
+      <div class="hero__grain" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="eyebrow hero__eyebrow"><span></span><span data-i18n="heroEyebrow">A WORLD APART</span><span></span></p>
+        <h1 id="hero-title" class="hero__title" data-split="BARAKS DINE" aria-label="BARAKS DINE">BARAKS DINE</h1>
+        <p class="hero__tagline" data-i18n="heroTagline">Where Luxury Stays, and Flavor Lives.</p>
+        <div class="hero__actions">
+          <a class="button button--gold magnetic" href="#booking" data-i18n="bookRoom">Book a Room <span>↗</span></a>
+          <a class="button button--outline magnetic" href="#booking" data-i18n="reserveTable">Reserve a Table <span>↗</span></a>
+        </div>
+      </div>
+      <div class="hero__three" id="three-stage" aria-hidden="true"></div>
+      <div class="hero__side-note"><span>01 / 06</span><i></i><span>THE ART OF STAYING</span></div>
+      <a class="scroll-cue" href="#intro" aria-label="Scroll to discover"><span class="scroll-cue__line"></span><span>SCROLL TO DISCOVER</span></a>
+      <div class="hero__bottom-note">EST. IN EXCELLENCE <span>—</span> HOSPITALITY, REIMAGINED</div>
+      <div class="hero__sound-controls">
+        <button class="sound-button" id="sound-toggle" type="button" aria-pressed="false"><span class="sound-bars"><i></i><i></i><i></i><i></i></span><span>VIDEO SOUND OFF</span></button>
+        <button class="sound-button" id="music-toggle" type="button" aria-pressed="false"><span class="music-glyph">♫</span><span>AMBIENCE OFF</span></button>
+      </div>
+    </section>
+
+    <!-- INTRO / ABOUT -->
+    <section class="intro section-pad" id="intro">
+      <div class="section-kicker"><span>01</span><span class="kicker-line"></span><span>THE BARAKS EXPERIENCE</span></div>
+      <div class="intro__grid">
+        <div class="intro__visual reveal-image">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&auto=format&fit=crop&q=85" alt="Warm contemporary luxury hotel interior with sculptural furniture" loading="lazy">
+          <div class="intro__stamp"><span>BD</span><small>MADE FOR<br>THE MOMENT</small></div>
+          <div class="image-caption">A QUIETER KIND OF GRANDEUR <span>01 — 04</span></div>
+        </div>
+        <div class="intro__copy">
+          <p class="eyebrow eyebrow--gold" data-i18n="aboutEyebrow">MORE THAN A DESTINATION</p>
+          <h2 class="display-title" data-i18n="aboutTitle">An artful pause<br>from the <em>ordinary.</em></h2>
+          <p class="body-copy" data-i18n="aboutBody">A world of considered details, intuitive service and moments that linger. From the first welcome to the last course, every BARAKS DINE experience is designed to feel effortless, personal and beautifully unexpected.</p>
+          <a href="#experiences" class="text-link">DISCOVER OUR STORY <span>↗</span></a>
+          <div class="stats-grid">
+            <div class="stat"><strong data-count="72">0</strong><span>ROOMS & SUITES</span></div>
+            <div class="stat"><strong data-count="18">0</strong><span>YEARS OF CRAFT</span></div>
+            <div class="stat"><strong data-count="4">0</strong><span>DINING CONCEPTS</span></div>
+            <div class="stat"><strong data-count="12">0</strong><span>SIGNATURE CHEFS</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-label="Luxury, dining, stay, experience"><div class="marquee__track"><span>LUXURY <b>✳</b> DINING <b>✳</b> STAY <b>✳</b> EXPERIENCE <b>✳</b> LUXURY <b>✳</b> DINING <b>✳</b> STAY <b>✳</b> EXPERIENCE <b>✳</b></span><span aria-hidden="true">LUXURY <b>✳</b> DINING <b>✳</b> STAY <b>✳</b> EXPERIENCE <b>✳</b> LUXURY <b>✳</b> DINING <b>✳</b> STAY <b>✳</b> EXPERIENCE <b>✳</b></span></div></div>
+
+    <!-- ROOMS -->
+    <section class="rooms section-pad" id="rooms">
+      <div class="section-heading reveal-up">
+        <div class="section-kicker"><span>02</span><span class="kicker-line"></span><span>YOUR PRIVATE SANCTUARY</span></div>
+        <div class="section-heading__row"><div><p class="eyebrow eyebrow--gold">STAY A LITTLE LONGER</p><h2 class="display-title">Spaces to <em>unwind.</em></h2></div><p class="section-aside">A considered collection of rooms and suites, shaped around the pleasure of slowing down.</p></div>
+      </div>
+      <div class="rooms-grid">
+        <article class="room-card room-card--feature" data-tilt>
+          <div class="room-card__image image-slider" data-images="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1400&auto=format&fit=crop&q=85|https://images.unsplash.com/photo-1590490360182-c33d57733427?w=1400&auto=format&fit=crop&q=85|https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1400&auto=format&fit=crop&q=85">
+            <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1400&auto=format&fit=crop&q=85" alt="Deluxe hotel room with soft neutral linen and warm lighting" loading="lazy">
+            <div class="room-card__number">01 / 03</div><div class="slider-dots"><button class="is-active" aria-label="Show room image 1"></button><button aria-label="Show room image 2"></button><button aria-label="Show room image 3"></button></div>
+          </div>
+          <div class="room-card__content"><div><p class="eyebrow eyebrow--gold">THE EVERYDAY, ELEVATED</p><h3>Deluxe Room</h3><p class="room-card__desc">A calming retreat with thoughtful details and generous natural light.</p></div><div class="room-card__meta"><strong class="price" data-kes="28000">KES 28,000</strong><span> / NIGHT</span><a href="#booking" class="round-arrow" aria-label="Book Deluxe Room">↗</a></div><div class="amenities"><span>◇ KING BED</span><span>◌ CITY VIEW</span><span>⌁ 42 M²</span></div></div>
+        </article>
+        <article class="room-card" data-tilt>
+          <div class="room-card__image image-slider" data-images="https://images.unsplash.com/photo-1591088398332-8a7791972843?w=1200&auto=format&fit=crop&q=85|https://images.unsplash.com/photo-1595576508898-0ad5c879a061?w=1200&auto=format&fit=crop&q=85|https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=1200&auto=format&fit=crop&q=85">
+            <img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?w=1200&auto=format&fit=crop&q=85" alt="Executive hotel suite with contemporary furnishings" loading="lazy">
+            <div class="room-card__number">02 / 03</div><div class="slider-dots"><button class="is-active" aria-label="Show room image 1"></button><button aria-label="Show room image 2"></button><button aria-label="Show room image 3"></button></div>
+          </div>
+          <div class="room-card__content"><div><p class="eyebrow eyebrow--gold">ROOM TO THINK BIGGER</p><h3>Executive Suite</h3><p class="room-card__desc">Separate lounge, refined finishes and room to make the day your own.</p></div><div class="room-card__meta"><strong class="price" data-kes="52000">KES 52,000</strong><span> / NIGHT</span><a href="#booking" class="round-arrow" aria-label="Book Executive Suite">↗</a></div><div class="amenities"><span>◇ KING BED</span><span>◌ LOUNGE</span><span>⌁ 76 M²</span></div></div>
+        </article>
+        <article class="room-card" data-tilt>
+          <div class="room-card__image image-slider" data-images="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop&q=85|https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&auto=format&fit=crop&q=85|https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&auto=format&fit=crop&q=85">
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&auto=format&fit=crop&q=85" alt="Presidential suite with expansive luxury living area" loading="lazy">
+            <div class="room-card__number">03 / 03</div><div class="slider-dots"><button class="is-active" aria-label="Show room image 1"></button><button aria-label="Show room image 2"></button><button aria-label="Show room image 3"></button></div>
+          </div>
+          <div class="room-card__content"><div><p class="eyebrow eyebrow--gold">THE ART OF ARRIVING</p><h3>Presidential Suite</h3><p class="room-card__desc">An exceptional private residence with a dedicated host and panoramic views.</p></div><div class="room-card__meta"><strong class="price" data-kes="180000">KES 180,000</strong><span> / NIGHT</span><a href="#booking" class="round-arrow" aria-label="Book Presidential Suite">↗</a></div><div class="amenities"><span>◇ PRIVATE LOUNGE</span><span>◌ HOST SERVICE</span><span>⌁ 160 M²</span></div></div>
+        </article>
+      </div>
+      <p class="pricing-note">Illustrative starting rates for this website concept. Confirm actual availability and prices directly with the property.</p>
+    </section>
+
+    <!-- DINING -->
+    <section class="dining section-pad" id="dining">
+      <div class="dining__backdrop" aria-hidden="true"></div>
+      <div class="section-heading reveal-up">
+        <div class="section-kicker"><span>03</span><span class="kicker-line"></span><span>A TABLE FOR EVERY MOOD</span></div>
+        <div class="section-heading__row"><div><p class="eyebrow eyebrow--gold">FOUR DISTINCT WORLDS</p><h2 class="display-title">A taste of <em>the extraordinary.</em></h2></div><p class="section-aside">From intimate tasting menus to open-air evenings, discover a new reason to gather.</p></div>
+      </div>
+      <div class="dining-grid">
+        <article class="venue-card venue-card--large">
+          <div class="venue-card__media"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1400&auto=format&fit=crop&q=85" alt="Elegant fine dining restaurant set for an intimate dinner" loading="lazy"><video muted loop playsinline preload="none" poster="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1400&auto=format&fit=crop&q=85" aria-hidden="true"><source src="https://videos.pexels.com/video-files/35083680/14863150_1920_1080_60fps.mp4" type="video/mp4"></video></div>
+          <div class="venue-card__content"><p class="eyebrow eyebrow--gold">01 — THE SIGNATURE</p><h3>Fine Dining</h3><p>Season-led tasting menus, precise technique and quietly memorable service.</p><button class="text-link menu-open" data-venue="fine" type="button">EXPLORE THE MENU <span>↗</span></button></div>
+        </article>
+        <article class="venue-card">
+          <div class="venue-card__media"><img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1100&auto=format&fit=crop&q=85" alt="Rooftop lounge with warm evening ambience" loading="lazy"><video muted loop playsinline preload="none" poster="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1100&auto=format&fit=crop&q=85" aria-hidden="true"><source src="https://videos.pexels.com/video-files/35083680/14863150_1920_1080_60fps.mp4" type="video/mp4"></video></div>
+          <div class="venue-card__content"><p class="eyebrow eyebrow--gold">02 — ABOVE IT ALL</p><h3>Rooftop Lounge</h3><p>Skyline views, small plates and a golden-hour state of mind.</p><button class="text-link menu-open" data-venue="roof" type="button">EXPLORE THE MENU <span>↗</span></button></div>
+        </article>
+        <article class="venue-card">
+          <div class="venue-card__media"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=1100&auto=format&fit=crop&q=85" alt="Chef-prepared steak and seasonal sides" loading="lazy"><video muted loop playsinline preload="none" poster="https://images.unsplash.com/photo-1544025162-d76694265947?w=1100&auto=format&fit=crop&q=85" aria-hidden="true"><source src="https://videos.pexels.com/video-files/35083680/14863150_1920_1080_60fps.mp4" type="video/mp4"></video></div>
+          <div class="venue-card__content"><p class="eyebrow eyebrow--gold">03 — FIRE & FLAVOUR</p><h3>Steakhouse</h3><p>Beautiful cuts, open-fire character and produce treated with respect.</p><button class="text-link menu-open" data-venue="steak" type="button">EXPLORE THE MENU <span>↗</span></button></div>
+        </article>
+        <article class="venue-card venue-card--wide">
+          <div class="venue-card__media"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop&q=85" alt="Refined café and bakery counter with pastries" loading="lazy"><video muted loop playsinline preload="none" poster="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop&q=85" aria-hidden="true"><source src="https://videos.pexels.com/video-files/35083680/14863150_1920_1080_60fps.mp4" type="video/mp4"></video></div>
+          <div class="venue-card__content"><p class="eyebrow eyebrow--gold">04 — SLOW MORNINGS</p><h3>Café & Bakery</h3><p>Freshly baked favourites, excellent coffee and a softer start to the day.</p><button class="text-link menu-open" data-venue="cafe" type="button">EXPLORE THE MENU <span>↗</span></button></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SIGNATURE MENU -->
+    <section class="signature section-pad">
+      <div class="signature__intro"><div class="section-kicker"><span>04</span><span class="kicker-line"></span><span>THE SIGNATURE COLLECTION</span></div><p class="eyebrow eyebrow--gold">A LITTLE SOMETHING TO REMEMBER</p><h2 class="display-title">Made to be <em>savoured.</em></h2><p class="body-copy">A glimpse into the kitchen: seasonal inspiration, thoughtful sourcing and dishes made with intention.</p></div>
+      <div class="menu-filter" role="group" aria-label="Filter signature dishes"><button class="filter-button is-active" data-filter="all">ALL</button><button class="filter-button" data-filter="starter">STARTERS</button><button class="filter-button" data-filter="main">MAINS</button><button class="filter-button" data-filter="dessert">DESSERTS</button></div>
+      <div class="signature-grid">
+        <article class="dish-card" data-category="starter"><div class="dish-card__image"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=900&auto=format&fit=crop&q=85" alt="Colourful seasonal garden salad" loading="lazy"><span>01</span></div><div class="dish-card__details"><div><h3>Garden in Bloom</h3><p>Heirloom vegetables · citrus · garden herbs</p></div><strong class="price" data-kes="1800">KES 1,800</strong></div></article>
+        <article class="dish-card" data-category="main"><div class="dish-card__image"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=900&auto=format&fit=crop&q=85" alt="Grilled premium steak plated with vegetables" loading="lazy"><span>02</span></div><div class="dish-card__details"><div><h3>Ember & Earth</h3><p>Open-fire grill · seasonal sides · jus</p></div><strong class="price" data-kes="4200">KES 4,200</strong></div></article>
+        <article class="dish-card" data-category="main"><div class="dish-card__image"><img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=900&auto=format&fit=crop&q=85" alt="Chef-crafted seafood dish" loading="lazy"><span>03</span></div><div class="dish-card__details"><div><h3>Coastal Reverie</h3><p>Market catch · coconut · fragrant rice</p></div><strong class="price" data-kes="3600">KES 3,600</strong></div></article>
+        <article class="dish-card" data-category="dessert"><div class="dish-card__image"><img src="https://images.unsplash.com/photo-1551024506-0BCCd828D307?w=900&auto=format&fit=crop&q=85" alt="Elegant plated dessert with seasonal fruit" loading="lazy"><span>04</span></div><div class="dish-card__details"><div><h3>Golden Hour</h3><p>Vanilla · stone fruit · delicate pastry</p></div><strong class="price" data-kes="1500">KES 1,500</strong></div></article>
+        <article class="dish-card" data-category="starter"><div class="dish-card__image"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=900&auto=format&fit=crop&q=85" alt="Fresh vegetable and grain starter" loading="lazy"><span>05</span></div><div class="dish-card__details"><div><h3>Harvest Table</h3><p>Ancient grains · greens · toasted seeds</p></div><strong class="price" data-kes="1600">KES 1,600</strong></div></article>
+        <article class="dish-card" data-category="dessert"><div class="dish-card__image"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=900&auto=format&fit=crop&q=85" alt="Creamy dessert topped with berries" loading="lazy"><span>06</span></div><div class="dish-card__details"><div><h3>Velvet No. 6</h3><p>Dark cocoa · cream · sea salt</p></div><strong class="price" data-kes="1400">KES 1,400</strong></div></article>
+      </div>
+      <p class="pricing-note">Menu items and prices are illustrative placeholders. Final menus depend on season and property operations.</p>
+    </section>
+
+    <!-- EXPERIENCES -->
+    <section class="experiences section-pad" id="experiences">
+      <div class="section-heading reveal-up"><div class="section-kicker"><span>05</span><span class="kicker-line"></span><span>TIME WELL SPENT</span></div><div class="section-heading__row"><div><p class="eyebrow eyebrow--gold">FIND YOUR OWN RHYTHM</p><h2 class="display-title">Beyond the <em>expected.</em></h2></div><p class="section-aside">A collection of thoughtful experiences, each an invitation to reconnect with what matters.</p></div></div>
+      <div class="experience-list">
+        <a href="#booking" class="experience-row"><span class="experience-row__num">01</span><span class="experience-row__title">The Stillwater Spa</span><span class="experience-row__desc">Restorative rituals & quiet renewal</span><span class="experience-row__arrow">↗</span><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=900&auto=format&fit=crop&q=85" alt="Serene spa treatment room" loading="lazy"></a>
+        <a href="#booking" class="experience-row"><span class="experience-row__num">02</span><span class="experience-row__title">The Infinity Pool</span><span class="experience-row__desc">A slower kind of escape</span><span class="experience-row__arrow">↗</span><img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=900&auto=format&fit=crop&q=85" alt="Outdoor infinity swimming pool" loading="lazy"></a>
+        <a href="#booking" class="experience-row"><span class="experience-row__num">03</span><span class="experience-row__title">The Movement Studio</span><span class="experience-row__desc">Space to move, strength to return</span><span class="experience-row__arrow">↗</span><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=900&auto=format&fit=crop&q=85" alt="Modern fitness studio" loading="lazy"></a>
+        <a href="#events" class="experience-row"><span class="experience-row__num">04</span><span class="experience-row__title">Celebrations & Weddings</span><span class="experience-row__desc">Remarkable days, beautifully held</span><span class="experience-row__arrow">↗</span><img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=900&auto=format&fit=crop&q=85" alt="Elegant wedding reception tables" loading="lazy"></a>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery section-pad" id="gallery">
+      <div class="gallery__heading"><div class="section-kicker"><span>06</span><span class="kicker-line"></span><span>POSTCARDS FROM BARAKS</span></div><p class="eyebrow eyebrow--gold">A SENSE OF PLACE</p><h2 class="display-title">The details tell<br><em>the story.</em></h2><p class="body-copy">A visual journal of the spaces, flavours and moments that make a stay memorable.</p></div>
+      <div class="gallery-grid">
+        <button class="gallery-item gallery-item--tall" data-full="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1800&auto=format&fit=crop&q=90" aria-label="Open hotel exterior image"><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=900&auto=format&fit=crop&q=85" alt="Luxury hotel exterior and pool" loading="lazy"><span>THE ARRIVAL</span></button>
+        <button class="gallery-item" data-full="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1800&auto=format&fit=crop&q=90" aria-label="Open fine dining image"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=900&auto=format&fit=crop&q=85" alt="Fine dining room with warm lighting" loading="lazy"><span>AT THE TABLE</span></button>
+        <button class="gallery-item gallery-item--wide" data-full="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1800&auto=format&fit=crop&q=90" aria-label="Open interior image"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1100&auto=format&fit=crop&q=85" alt="Refined architectural interior" loading="lazy"><span>THE ART OF SPACE</span></button>
+        <button class="gallery-item" data-full="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1800&auto=format&fit=crop&q=90" aria-label="Open spa image"><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=900&auto=format&fit=crop&q=85" alt="Restorative spa setting" loading="lazy"><span>THE PAUSE</span></button>
+        <button class="gallery-item" data-full="https://images.unsplash.com/photo-1544025162-d76694265947?w=1800&auto=format&fit=crop&q=90" aria-label="Open chef-crafted food image"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=900&auto=format&fit=crop&q=85" alt="Chef-crafted main course" loading="lazy"><span>THE CRAFT</span></button>
+      </div>
+    </section>
+
+    <!-- CHEFS -->
+    <section class="chefs section-pad">
+      <div class="section-heading reveal-up"><div class="section-kicker"><span>07</span><span class="kicker-line"></span><span>THE PEOPLE BEHIND THE PLATE</span></div><div class="section-heading__row"><div><p class="eyebrow eyebrow--gold">MEET THE CREATORS</p><h2 class="display-title">Crafted by <em>character.</em></h2></div><p class="section-aside">Curiosity, discipline and a deep respect for ingredients bring every menu to life.</p></div></div>
+      <div class="chefs-grid">
+        <article class="chef-card" tabindex="0" aria-label="Chef Amara Njeri. Focus: seasonal cuisine. Focus the card to reveal more"><div class="chef-card__inner"><div class="chef-card__front"><img src="https://images.unsplash.com/photo-1583394293214-28ez5c62cf6f?w=900&auto=format&fit=crop&q=85" alt="Portrait of a professional chef in a kitchen" loading="lazy"><div class="chef-card__caption"><span>EXECUTIVE CHEF</span><h3>Amara Njeri</h3></div></div><div class="chef-card__back"><span>01 / THE VISION</span><h3>Amara Njeri</h3><p>Building menus around seasonality, memory and the extraordinary potential of local ingredients.</p><small>SEASONAL CUISINE</small></div></div></article>
+        <article class="chef-card" tabindex="0" aria-label="Chef Daniel Okello. Focus: open-fire cooking. Focus the card to reveal more"><div class="chef-card__inner"><div class="chef-card__front"><img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=900&auto=format&fit=crop&q=85" alt="Chef concentrating on food preparation" loading="lazy"><div class="chef-card__caption"><span>CHEF DE CUISINE</span><h3>Daniel Okello</h3></div></div><div class="chef-card__back"><span>02 / THE ELEMENT</span><h3>Daniel Okello</h3><p>Finding depth and elegance through live fire, patient technique and honest flavour.</p><small>OPEN-FIRE COOKING</small></div></div></article>
+        <article class="chef-card" tabindex="0" aria-label="Chef Sofia Mensah. Focus: pastry and patisserie. Focus the card to reveal more"><div class="chef-card__inner"><div class="chef-card__front"><img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=900&auto=format&fit=crop&q=85" alt="Pastry chef working in a professional kitchen" loading="lazy"><div class="chef-card__caption"><span>HEAD PASTRY CHEF</span><h3>Sofia Mensah</h3></div></div><div class="chef-card__back"><span>03 / THE FINISH</span><h3>Sofia Mensah</h3><p>Creating delicate, balanced desserts that make the final course feel like a new beginning.</p><small>PASTRY & PATISSERIE</small></div></div></article>
+      </div>
+      <p class="pricing-note">Chef profiles are fictional creative placeholders for this website concept.</p>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials section-pad" aria-label="Guest stories">
+      <div class="testimonials__ornament" aria-hidden="true">“</div>
+      <div class="section-kicker"><span>08</span><span class="kicker-line"></span><span>WORDS THAT STAY</span></div>
+      <div class="testimonial-slider" id="testimonial-slider" aria-live="polite">
+        <article class="testimonial is-active"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“The kind of place where the smallest details make the biggest impression. Beautifully calm, beautifully considered.”</blockquote><div class="testimonial__author"><span class="author-avatar">EM</span><div><strong>Elena M.</strong><small>GUEST STORY · FICTIONAL SAMPLE</small></div></div></article>
+        <article class="testimonial"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“A dinner that felt like a journey. Thoughtful flavours, warm hospitality and a room we did not want to leave.”</blockquote><div class="testimonial__author"><span class="author-avatar">JT</span><div><strong>James T.</strong><small>GUEST STORY · FICTIONAL SAMPLE</small></div></div></article>
+        <article class="testimonial"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“An effortlessly elegant escape. Every moment had its own rhythm, and the team made us feel genuinely welcome.”</blockquote><div class="testimonial__author"><span class="author-avatar">AK</span><div><strong>Amina K.</strong><small>GUEST STORY · FICTIONAL SAMPLE</small></div></div></article>
+      </div>
+      <div class="testimonial-controls"><button id="testimonial-prev" aria-label="Previous testimonial">←</button><div class="testimonial-dots"><button class="is-active" aria-label="Show testimonial 1"></button><button aria-label="Show testimonial 2"></button><button aria-label="Show testimonial 3"></button></div><button id="testimonial-next" aria-label="Next testimonial">→</button></div>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="booking section-pad" id="booking">
+      <div class="booking__heading"><div class="section-kicker"><span>09</span><span class="kicker-line"></span><span>BEGIN YOUR EXPERIENCE</span></div><p class="eyebrow eyebrow--gold">YOUR MOMENT STARTS HERE</p><h2 class="display-title">Make room for <em>something special.</em></h2><p class="body-copy">Share your preferred dates and we’ll show you what a considered stay could look like.</p></div>
+      <div class="booking-panel">
+        <div class="booking-tabs" role="tablist" aria-label="Choose booking type"><button class="booking-tab is-active" role="tab" aria-selected="true" aria-controls="room-booking" id="tab-rooms" data-booking-tab="rooms">STAY WITH US</button><button class="booking-tab" role="tab" aria-selected="false" aria-controls="table-booking" id="tab-table" data-booking-tab="table">DINE WITH US</button></div>
+        <form id="room-booking" class="booking-form is-active" novalidate>
+          <div class="form-field"><label for="checkin">CHECK IN</label><input type="date" id="checkin" name="checkin" required></div>
+          <div class="form-field"><label for="checkout">CHECK OUT</label><input type="date" id="checkout" name="checkout" required></div>
+          <div class="form-field"><label for="room-guests">GUESTS</label><select id="room-guests" name="guests"><option>1 Guest</option><option selected>2 Guests</option><option>3 Guests</option><option>4 Guests</option><option>5+ Guests</option></select></div>
+          <div class="form-field"><label for="room-type">ROOM TYPE</label><select id="room-type" name="room"><option>Deluxe Room</option><option>Executive Suite</option><option>Presidential Suite</option></select></div>
+          <button class="button button--gold booking-submit" type="submit">CHECK AVAILABILITY <span>↗</span></button>
+          <p class="form-note">Demo enquiry only — no reservation is made or charged by this page.</p>
+        </form>
+        <form id="table-booking" class="booking-form" novalidate>
+          <div class="form-field"><label for="dine-date">DATE</label><input type="date" id="dine-date" name="date" required></div>
+          <div class="form-field"><label for="dine-time">TIME</label><select id="dine-time" name="time"><option>12:00</option><option>13:00</option><option>18:00</option><option selected>19:00</option><option>20:00</option><option>21:00</option></select></div>
+          <div class="form-field"><label for="dine-guests">PARTY SIZE</label><select id="dine-guests" name="guests"><option>1 Guest</option><option selected>2 Guests</option><option>3 Guests</option><option>4 Guests</option><option>5 Guests</option><option>6+ Guests</option></select></div>
+          <div class="form-field"><label for="dine-venue">DINING ROOM</label><select id="dine-venue" name="venue"><option>Fine Dining</option><option>Rooftop Lounge</option><option>Steakhouse</option><option>Café & Bakery</option></select></div>
+          <button class="button button--gold booking-submit" type="submit">REQUEST A TABLE <span>↗</span></button>
+          <p class="form-note">Demo enquiry only — connect a reservation provider to confirm a table.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- OFFERS / EVENTS -->
+    <section class="offer section-pad" id="events">
+      <div class="offer__image"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=1800&auto=format&fit=crop&q=85" alt="Elegant celebration venue with flowers and warm lighting" loading="lazy"></div>
+      <div class="offer__content"><p class="eyebrow eyebrow--gold">A MOMENT WORTH MARKING</p><h2 class="display-title">Gather beautifully.<br><em>Remember forever.</em></h2><p>From intimate celebrations to meaningful milestones, our events team brings thoughtful detail to every occasion.</p><a href="#contact" class="button button--gold">PLAN YOUR EVENT <span>↗</span></a><div class="offer__timer-label">SAMPLE SEASONAL FEATURE ENDS IN</div><div class="countdown" id="countdown" aria-label="Sample countdown"><div><strong id="count-days">07</strong><span>DAYS</span></div><i>:</i><div><strong id="count-hours">00</strong><span>HOURS</span></div><i>:</i><div><strong id="count-minutes">00</strong><span>MINUTES</span></div><i>:</i><div><strong id="count-seconds">00</strong><span>SECONDS</span></div></div><small class="timer-note">Illustrative countdown for the demo. Set a real campaign end date before launch.</small></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section-pad" id="contact">
+      <div class="section-heading reveal-up"><div class="section-kicker"><span>10</span><span class="kicker-line"></span><span>WE WOULD LOVE TO HEAR FROM YOU</span></div><div class="section-heading__row"><div><p class="eyebrow eyebrow--gold">LET'S MAKE IT HAPPEN</p><h2 class="display-title">The next chapter<br>starts with <em>hello.</em></h2></div><p class="section-aside">For room enquiries, dining reservations, celebrations or simply a question, our team is ready to help.</p></div></div>
+      <div class="contact-grid">
+        <div class="contact-info"><div class="contact-info__item"><span>GENERAL ENQUIRIES</span><a href="mailto:hello@baraksdine.example">hello@baraksdine.example</a></div><div class="contact-info__item"><span>RESERVATIONS</span><a href="#booking">Plan a stay or a table ↗</a></div><div class="contact-info__item"><span>LOCATION</span><p>Property address to be confirmed<br><small>Replace with your verified hotel address before launch.</small></p></div><div class="social-links"><a href="#" aria-label="Instagram">IG ↗</a><a href="#" aria-label="Facebook">FB ↗</a><a href="#" aria-label="Pinterest">PIN ↗</a></div>
+          <div class="map-frame"><iframe id="map-embed" title="Map preview — update to BARAKS DINE verified location" src="https://www.google.com/maps?q=Kenya&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe><span>MAP PREVIEW · REPLACE WITH YOUR PROPERTY PIN</span></div>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate><p class="eyebrow eyebrow--gold">SEND A NOTE</p><h3>How can we help?</h3><div class="form-field"><label for="contact-name">YOUR NAME</label><input type="text" id="contact-name" name="name" placeholder="Name" required minlength="2"></div><div class="form-field"><label for="contact-email">EMAIL ADDRESS</label><input type="email" id="contact-email" name="email" placeholder="you@example.com" required></div><div class="form-field"><label for="contact-subject">I'M ENQUIRING ABOUT</label><select id="contact-subject" name="subject"><option>Room reservation</option><option>Dining reservation</option><option>Events & weddings</option><option>General enquiry</option></select></div><div class="form-field"><label for="contact-message">YOUR MESSAGE</label><textarea id="contact-message" name="message" rows="4" placeholder="Tell us a little more..." required minlength="10"></textarea></div><button class="button button--gold" type="submit">SEND ENQUIRY <span>↗</span></button><p class="form-note">This demo form validates locally. Connect an email or CRM service to receive submissions.</p></form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-top"><a class="brand brand--footer" href="#home"><span class="brand__monogram">B<span>.</span></span><span class="brand__wordmark">BARAKS <i>DINE</i></span></a><p>Where Luxury Stays,<br>and Flavor Lives.</p><a href="#top" class="back-top">BACK TO TOP ↑</a></div>
+      <div class="footer-main"><div><span class="footer-label">STAY IN THE KNOW</span><form id="newsletter-form" class="newsletter-form"><label class="sr-only" for="newsletter-email">Email address</label><input type="email" id="newsletter-email" placeholder="Your email address" required><button aria-label="Subscribe to newsletter" type="submit">↗</button></form><small>By subscribing, you agree to receive occasional updates. Demo only.</small></div><div class="footer-links"><div><span class="footer-label">EXPLORE</span><a href="#rooms">Rooms & Suites</a><a href="#dining">Dining</a><a href="#experiences">Experiences</a><a href="#events">Events</a></div><div><span class="footer-label">CONNECT</span><a href="#contact">Contact</a><a href="#booking">Reservations</a><a href="404.html">404 page</a><a href="#privacy-note">Privacy notice</a></div></div></div>
+      <div class="footer-bottom" id="privacy-note"><span>© <span id="current-year"></span> BARAKS DINE. CONCEPT WEBSITE.</span><span>DESIGNED FOR THE ART OF STAYING.</span><span><a href="#top">PRIVACY</a> · <a href="#top">TERMS</a></span></div>
+    </footer>
+  </main>
+
+  <!-- Floating utilities -->
+  <a class="whatsapp-float" id="whatsapp-link" href="https://wa.me/?text=Hello%20BARAKS%20DINE%2C%20I%20have%20an%20enquiry." target="_blank" rel="noopener" aria-label="Open WhatsApp to contact BARAKS DINE"><span>◔</span></a>
+  <div class="accessibility-tools"><button id="motion-toggle" type="button" aria-pressed="false" title="Toggle reduced motion">◌ <span>REDUCE MOTION</span></button></div>
+
+  <!-- Live-chat concept UI -->
+  <div class="chat-widget"><button class="chat-launch" id="chat-launch" aria-expanded="false" aria-controls="chat-panel"><span class="chat-launch__dot"></span> HOW CAN WE HELP?</button><section class="chat-panel" id="chat-panel" aria-label="Live chat demo" hidden><div class="chat-panel__head"><div><strong>BARAKS CONCIERGE</strong><small>DEMO CHAT · NOT CONNECTED</small></div><button id="chat-close" aria-label="Close chat">×</button></div><div class="chat-messages" id="chat-messages" aria-live="polite"><p class="chat-bubble chat-bubble--agent">Welcome to BARAKS DINE. What would you like to know?</p></div><form id="chat-form" class="chat-form"><label class="sr-only" for="chat-message">Your message</label><input id="chat-message" placeholder="Type a message…" autocomplete="off" required><button type="submit" aria-label="Send message">↑</button></form></section></div>
+
+  <!-- Cookie choice -->
+  <aside class="cookie-banner" id="cookie-banner" aria-label="Cookie preferences" hidden><div><strong>A little transparency.</strong><p>This concept site uses essential browser storage for theme and preference settings. No advertising trackers are included.</p></div><div class="cookie-actions"><button id="cookie-reject" class="button button--text">DECLINE OPTIONAL</button><button id="cookie-accept" class="button button--gold button--small">OKAY</button></div></aside>
+
+  <!-- Modals -->
+  <dialog class="site-dialog" id="menu-dialog"><button class="dialog-close" data-close-dialog aria-label="Close menu">×</button><p class="eyebrow eyebrow--gold">THE BARAKS TABLE</p><h2 id="menu-dialog-title">Signature Menu</h2><p id="menu-dialog-copy">A seasonal selection from our kitchen.</p><div id="menu-dialog-items" class="dialog-menu-items"></div><small>Sample menu content and prices. Ask the restaurant for its current menu.</small></dialog>
+  <dialog class="lightbox" id="lightbox"><button class="dialog-close" data-close-dialog aria-label="Close gallery image">×</button><img id="lightbox-image" src="" alt="Expanded gallery photograph"><p id="lightbox-caption"></p></dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js" defer></script>
+  <script src="js/config.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script type="module" src="js/three-scene.js"></script>
+</body>
+</html>
